@@ -1,0 +1,17 @@
+<VirtualHost *:80>
+        ServerName demo23.iitpl.com
+        ServerAlias www.demo23.iitpl.com
+
+        ServerAdmin webmaster@open-text.in
+    DocumentRoot /var/www/html/demo23.iitpl.com
+
+         <Directory /var/www/html>
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+  </Directory>
+
+       ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
